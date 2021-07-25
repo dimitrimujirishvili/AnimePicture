@@ -10,8 +10,8 @@
 
 </head>
 
-<body>
-    <div style="background-color: rgb(255, 220, 62);">
+<body style="width: 1900px;">
+    <div style="background-color: rgb(255, 220, 62); width: 100%;">
         <img src="anime3.jpg" class="anime4">
 
     </div>
@@ -22,31 +22,38 @@
     <h2><a href="index.html">Home</a></button></h2>
     <h2 class="dia"><a href="day 2.html">Back</a></button></h2>
     <h3><strong>არამზადა რომელსაც ბაჭია გოგონა არც კი დასიზმრებია</strong></h3>
-    <div>
-        <img src="https://i1.sndcdn.com/avatars-kL5rd35Ac5SNyPH1-UDZW4Q-t500x500.jpg">
-        <h4><i> Sakuta Azusagawa  </i></h4>
-
-        <img src="https://i.pinimg.com/originals/cb/1a/69/cb1a691bf6dd5d7dab09c66498bff7b4.jpg">
-        <h4><i> Mai sakurajima  </i></h4>
-
-        <img src="https://i.pinimg.com/736x/4b/51/20/4b5120a9541099c9963ef1c16d57473a.jpg">
-        <h4><i> Tomoe Koa  </i></h4>
-    </div>
-    <div class="div1">
-        <img src="https://i.pinimg.com/originals/9c/2a/fa/9c2afab688c6202c87b3da8b69f0038b.jpg" >
-        <h4><i> rio Futaba </i></h4>
+    
+    <div id="firstDiv" class="flex-container">
         
-        <img src="https://i.pinimg.com/474x/bd/5a/a7/bd5aa72ca586e77c46ee322eeef65baa.jpg">
-        <h4><i> Nodoka Toyohama </i></h4>
-
-        <img src="https://i.pinimg.com/736x/79/54/d0/7954d09b4678fa0dbebc09377d4884ec.jpg">
-        <h4><i> Kaede Azusagawa </i></h4>
     </div>
-    <div class="div2">
-        <img src="https://i.pinimg.com/originals/02/4e/5f/024e5f93a3a25afbe5d1f5dd9679c569.jpg">
-        <h4><i> shoko Makinohara </i></h4>
+    <script>
+        const animes = [
+            { name: 'Sakuta Azusagawa', img: 'https://i1.sndcdn.com/avatars-kL5rd35Ac5SNyPH1-UDZW4Q-t500x500.jpg' },
+            { name: 'Mai sakurajima', img: 'https://i.pinimg.com/originals/cb/1a/69/cb1a691bf6dd5d7dab09c66498bff7b4.jpg' },
+            { name: 'Tomoe Koa', img: 'https://i.pinimg.com/736x/4b/51/20/4b5120a9541099c9963ef1c16d57473a.jpg' },
+            { name: 'rio Futaba', img: 'https://i.pinimg.com/originals/9c/2a/fa/9c2afab688c6202c87b3da8b69f0038b.jpg' },
+            { name: 'Nodoka Toyohama', img: 'https://i.pinimg.com/474x/bd/5a/a7/bd5aa72ca586e77c46ee322eeef65baa.jpg' },
+            { name: 'Kaede Azusagawa', img: 'https://i.pinimg.com/736x/79/54/d0/7954d09b4678fa0dbebc09377d4884ec.jpg' },
+            { name: 'shoko Makinohara', img: 'https://i.pinimg.com/originals/02/4e/5f/024e5f93a3a25afbe5d1f5dd9679c569.jpg' },
+    ]
+            for (anime of animes) {
+           console.log(anime);
+           var containerDiv = document.createElement('div');
 
-    </div>
+           var imageElement = document.createElement('img');
+           imageElement.src = anime.img;
+
+           var italicElement = document.createElement('i');
+           italicElement.innerHTML = anime.name;
+           var h6Element = document.createElement('h6');
+           h6Element.appendChild(italicElement);
+
+           containerDiv.appendChild(imageElement);
+           containerDiv.appendChild(h6Element);
+
+           document.getElementById('firstDiv').appendChild(containerDiv);
+        }
+    </script>
 </body>
 
 </html>
