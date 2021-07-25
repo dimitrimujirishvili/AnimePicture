@@ -79,8 +79,8 @@ h4{
 
 }
 .dia {
-    margin-top: -77px;
-    margin-bottom: 50px;
+    margin-top: 500px;
+    margin-bottom: 0px;
     margin-left: 800px;
     margin-right: auto;
 }
@@ -133,3 +133,20 @@ h4{
     margin-right: 4px;  
 }
 
+.flex-container {
+    display: flex;
+    
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  img{
+      width: 100px;
+      height: 100px;
+  }
