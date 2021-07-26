@@ -10,7 +10,7 @@
  
 </head>
 
-<body>
+<body style="width: 1900px;">
     <div style="background-color: rgb(255, 220, 62);">
         <img src="anime3.jpg" class="anime4" >
         
@@ -19,22 +19,49 @@
    <br>
    <br>
    <br>
-   <h2><a href="index.html">Home</a></button></h2>
-    <div>
-        <img src="https://pbs.twimg.com/media/EWlBWfmX0AEbXRR.jpg:large" class="anime center">
-        <img src="https://play-lh.googleusercontent.com/nwL8eFXaahMvQX6Nez6f2uIZG-Wm1ORRNvwALBUCCAKKt1CH6nLKxs59nmM6dyaSveQ" class="anime center">
-        <img src="https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/1837456/Japanese/1837456_Japanese_ShowThumbnail_2227b76b-a4fd-e811-8175-020165574d09.jpg" class="anime center">
-        <img src="https://m.media-amazon.com/images/M/MV5BOGZmYjkxMDItNmQ3ZC00YzdlLThjMDktYWJkOGZiOWU1NmY0XkEyXkFqcGdeQXVyMTA3MzQ4MTcw._V1_.jpg" class="anime center">
-        <img src="https://i.pinimg.com/originals/ba/17/c7/ba17c70abd08fb2cec7b7c3802055905.jpg" class="anime center">
-        <img src="დიტო.png" class="anime center">
-    </div>
+   <h2 class="dima"><a href="index.html">Home</a></button></h2>
+ 
+    <div id="firstDiv" class="flex-container">
 
-        <button><h3><a href="day_3.html">My Hero Akademia</a></h3></button>
+    </div>
+    <script>
+        const animes = [
+
+            { name: '<button class="script1"><h3><a href="day_3.html">My Hero Akademia</a></h3></button>', img: 'https://pbs.twimg.com/media/EWlBWfmX0AEbXRR.jpg:large' },
+            { name: '<button class="script2"><h3><a href="day_4.html">Naruto</a></h3></button>', img: 'https://play-lh.googleusercontent.com/nwL8eFXaahMvQX6Nez6f2uIZG-Wm1ORRNvwALBUCCAKKt1CH6nLKxs59nmM6dyaSveQ' },
+            { name: '<button class="script3"><h3><a href="day_5.html">არამზადა რომელ...</a></h3></button>', img: 'https://derf9v1xhwwx1.cloudfront.net/image/upload/oth/FunimationStoreFront/1837456/Japanese/1837456_Japanese_ShowThumbnail_2227b76b-a4fd-e811-8175-020165574d09.jpg' },
+            { name: '<button class="script4"><h3><a href="day_6.html">Demons Slayer</a></h3></button>', img: 'https://m.media-amazon.com/images/M/MV5BOGZmYjkxMDItNmQ3ZC00YzdlLThjMDktYWJkOGZiOWU1NmY0XkEyXkFqcGdeQXVyMTA3MzQ4MTcw._V1_.jpg' },
+            { name: '<button class="script5"><h3><a href="day_7.html">Dragon Ball-z</a></h3></button>', img: 'https://i.pinimg.com/originals/ba/17/c7/ba17c70abd08fb2cec7b7c3802055905.jpg' },
+            { name: '<button class="script6"><h3><a href="day_8.html">ტალღა</a></h3></button>', img: 'დიტო.png' },
+        ]
+
+        for (anime of animes)  {
+           console.log(anime);
+           var containerDiv = document.createElement('div');
+
+           var imageElement = document.createElement('img');
+           imageElement.src = anime.img;
+
+           var italicElement = document.createElement('i');
+           italicElement.innerHTML = anime.name;
+
+           var h6Element = document.createElement('h6');
+           h6Element.appendChild(italicElement);
+
+           containerDiv.appendChild(imageElement);
+           containerDiv.appendChild(h6Element);
+
+           document.getElementById('firstDiv').appendChild(containerDiv);
+        }
+    </script>
+
+        <!--<button><h3><a href="day_3.html">My Hero Akademia</a></h3></button>
         <button><h3><a href="day_4.html">Naruto</a></h3></button>
         <button><h3><a href="day_5.html">არამზადა რომელ...</a></h3></button>
         <button><h3><a href="day_6.html">Demons Slayer</a></h3></button>
         <button><h3><a href="day_7.html">Dragon Ball-z</a></h3></button>
         <button><h3><a href="day_8.html">ტალღა</a></h3></button>
-   </body>
+        -->
+    </body>
 
 </html>
