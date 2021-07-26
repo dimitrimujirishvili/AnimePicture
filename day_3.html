@@ -116,6 +116,53 @@
         <img src="anime30.jpg">
         <h4><i> All Might </i></h4>
     </div>
+    <script>
+        const animes = [
+
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+        ]
+
+        for (anime of animes) {
+           console.log(anime);
+           var containerDiv = document.createElement('div');
+
+           var imageElement = document.createElement('img');
+           imageElement.src = anime.img;
+
+           var italicElement = document.createElement('i');
+           italicElement.innerHTML = anime.name;
+           var h6Element = document.createElement('h6');
+           h6Element.appendChild(italicElement);
+
+           containerDiv.appendChild(imageElement);
+           containerDiv.appendChild(h6Element);
+
+           document.getElementById('firstDiv').appendChild(containerDiv);
+        }
+    </script>
 </body>
 
 </html>

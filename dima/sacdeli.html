@@ -23,36 +23,53 @@ img{
 </style>
 </head>
 <body>
+    <script>
+        const animes = [
 
-<div class="flex-container">
-    <div>
-        <img src="https://dragonball.guru/wp-content/uploads/2021/03/raditz-profile-e1624031860619.png">
-        <h6><i>Raditz </i></h6>
- </div>
- <div>
-        <img src="https://i.pinimg.com/originals/62/76/1e/62761e21e1f3a41aec3957c6267bc652.jpg">
-        <h6><i>Android 18 </i></h6>
-</div>
-<div>
-        <img src="https://i.pinimg.com/originals/e9/e5/2f/e9e52f761edc06bb08c4b1f1ec0ede09.jpg">
-        <h6><i> Mr. Satan</i></h6>
-    </div>
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+            { name: '', img: '' },
+        ]
 
+        for (anime of animes) {
+           console.log(anime);
+           var containerDiv = document.createElement('div');
 
-    <div>
-        <img src="https://dragonball.guru/wp-content/uploads/2021/03/raditz-profile-e1624031860619.png">
-        <h6><i>Raditz </i></h6>
- </div>
- <div>
-        <img src="https://i.pinimg.com/originals/62/76/1e/62761e21e1f3a41aec3957c6267bc652.jpg">
-        <h6><i>Android 18 </i></h6>
-</div>
-<div>
-        <img src="https://i.pinimg.com/originals/e9/e5/2f/e9e52f761edc06bb08c4b1f1ec0ede09.jpg">
-        <h6><i> Mr. Satan</i></h6>
-    </div>
-</div>
+           var imageElement = document.createElement('img');
+           imageElement.src = anime.img;
 
+           var italicElement = document.createElement('i');
+           italicElement.innerHTML = anime.name;
+           var h6Element = document.createElement('h6');
+           h6Element.appendChild(italicElement);
+
+           containerDiv.appendChild(imageElement);
+           containerDiv.appendChild(h6Element);
+
+           document.getElementById('firstDiv').appendChild(containerDiv);
+        }
+    </script>
 
 
 </body>
