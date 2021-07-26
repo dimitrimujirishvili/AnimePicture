@@ -38,12 +38,12 @@ body {
 
 }
 button {
-    margin-top: 30px;
+    margin-top: 400px;
     margin-bottom: 0px;
-    margin-right: 50px;
+    margin-right: 5px;
     margin-left: 30px;
     width: 400px;
-    height: 30px;
+    height: 40px;
 }
 .box{
     width: 599px;
@@ -97,6 +97,46 @@ button {
     p{
         margin-top: 300px;
         margin-bottom: 300px;
-        margin-left: 650px;
+        margin-left: -100px;
         margin-right: 70px;   
+    }
+
+    .h2{
+        margin-top: 45px;
+        margin-bottom: 300px;
+        margin-left: 450px;
+        margin-right: 70px; 
+    }
+    .h3{
+        margin-top: -5000px;
+        margin-bottom: -100px;
+        margin-left: 65px;
+        margin-right: 70px; 
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    
+  .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .flex-container > div {
+      background-color: #f1f1f1;
+      margin: 45px;
+      padding: 20px;
+      font-size: 30px;
+      width: 100px;
+      height: 100px;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    hr{
+        width: 1735px;
     }
