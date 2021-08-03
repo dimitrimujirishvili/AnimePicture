@@ -77,3 +77,10 @@ button {
     width: 400px;
     height: 35px;
   }
+  
+ #grad1 {
+    height: 800px;
+    background-color: #cccccc;
+    background-image: linear-gradient(purple, pink, white);
+    margin-top: -90px
+   }
